@@ -1,8 +1,10 @@
 <div class="choose-how-to-contribute_container">
     <div class="submit-song chooser">
-        <a>Submit a song</a>
+        <a href="#" (click)="submitASong()">Submit a song</a>
     </div>
     <div class="give-feedback chooser">
-        <a>Give feedback to others</a>
+        <a href="#" (click)="giveFeedback()">Give feedback to others</a>
     </div>
 </div>
+
+<submit-a-song *ngIf="submitMode"></submit-a-song> 
