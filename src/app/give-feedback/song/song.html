@@ -1,0 +1,14 @@
+<div class="song_container">
+    <div class="song_user">User: {{model.userId}}</div>
+    <div class="song_description">{{model.description}}</div>
+    <div class="song_link"><a href="{{model.link}}">Listen to the song</a></div>
+    <div class="song_add-comment">
+        <textarea [(ngModel)]="mixingComment" placeholder="Add some text here"></textarea>
+    </div>
+    <div class="song_mixing-comments">
+        <label>Mixing comments</label>
+        <ul>
+            <li *ngFor="let mixingComment of model.mixingComments;">{{mixingComment.comment}}</li>
+        </ul>
+    </div>
+</div>
